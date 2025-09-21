@@ -181,6 +181,40 @@ export default function Home() {
       <SpotifyStatus />
       <FallingPhrases />
 
+      <div className={styles.mainContent}>
+        <p>
+          So uh. Hi. This is my portfolio? My story? My workplace? It's my
+          everything I guess...
+        </p>
+        <p>
+          I just thought it's much better than AI slop that 99% portfolios run
+          on. Those don't tell anything about actual person. Also I wanted a
+          place to dump my projects, experiments, thoughts and rants.
+        </p>
+        <p>
+          You should be able to find a lot of info here, like: "what am I
+          listening to", qualities, projects, even my thoughts and values (if I
+          get slightly braver later). But unique thing I'm trying to give you
+          others don't is possibility to understand my person, traits, tastes,
+          tastes, mentality not just spam languages i can type in.
+        </p>
+        <p>
+          First of all, current version of this site does NOT convey ME well.
+          Thus, it's unused aside this repo. The decorations are ugly, the
+          colors are bad, the layout is gone, everything is meh. Also if I'd aim
+          for perfection, I wouldn't even ever have started coding it.
+        </p>
+        <p>
+          If you just want something like a normal portfolio would, I'll add a
+          button for it in the top left corner, that only shows qualities. Or
+          you'll have to choose the version upon entering.
+        </p>
+        <h4>
+          Also I feel like there's way too much text, and no one is going to it,
+          especially if it's just introduction.
+        </h4>
+      </div>
+
       {/* Decorations (vines and construction tape) */}
       <Image
         src="/constructions-tape.png"
@@ -200,15 +234,42 @@ export default function Home() {
       <Image
         src="/vines.png"
         alt="Vines"
-        width={180}
-        height={120}
+        width={720}
+        height={480}
         style={{
           position: "fixed",
-          top: 40,
-          left: 60,
-          scale: "2",
+          top: -70,
+          left: -50,
           zIndex: 1000,
           pointerEvents: "none",
+        }}
+      />
+      <Image
+        src="/vines2.png"
+        alt="Vines"
+        width={720}
+        height={480}
+        style={{
+          position: "fixed",
+          top: -110,
+          right: 440,
+          zIndex: 1000 - 1,
+          pointerEvents: "none",
+        }}
+      />
+      <Image
+        src="/vines2.png"
+        alt="Vines"
+        width={720}
+        height={480}
+        style={{
+          position: "fixed",
+          top: -110,
+          right: -50,
+          zIndex: 1000 - 1,
+          pointerEvents: "none",
+          WebkitTransform: "scaleX(-1)",
+          transform: "scaleX(-1)",
         }}
       />
       <h1
@@ -223,6 +284,20 @@ export default function Home() {
       >
         Most definitely under construction!
       </h1>
+
+      <Image
+        src="https://i.pinimg.com/originals/1c/79/ac/1c79ac50b06bb42a24058bf13c162a3e.gif"
+        alt="Pinimg Cat"
+        width={240}
+        height={380}
+        style={{
+          position: "fixed",
+          bottom: 20,
+          right: 20,
+          zIndex: 1001,
+          pointerEvents: "none",
+        }}
+      />
     </div>
   );
 }

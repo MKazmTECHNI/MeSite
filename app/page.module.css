@@ -34,6 +34,7 @@
 
 .profile {
   text-align: center;
+  margin-top: 20vh;
 }
 
 .profile img {
@@ -194,4 +195,22 @@
   100% {
     transform: rotate(-360deg);
   }
+}
+
+.mainContent {
+  position: relative;
+  z-index: 10;
+  color: var(--text-main);
+  text-align: center;
+  margin-top: 5vh;
+  max-width: 70vw;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.4em;
+  background: #0004;
+  border-radius: var(--border-radius-card);
+  box-shadow: var(--box-shadow-card);
+  padding: 1em 1em 0.8em 1em;
+  font-size: 1.4em;
 }
