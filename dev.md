@@ -11,3 +11,5 @@
 # Reminders
 
 - i forgo
+- this site suckzzz
+- Random bullshit gooooo
